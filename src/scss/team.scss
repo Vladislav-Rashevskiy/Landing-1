@@ -1,0 +1,53 @@
+.team {
+    background: url(../images/team.png) no-repeat;
+    background-size: cover;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        height: 715px;
+        color: white;
+        @media (max-width: 480px) {
+            height: auto;
+        }
+    }
+    .team-title {
+        width: 100%;
+        text-align: center;
+    }
+    .team-items {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        @media (max-width: 910px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .team-items__photo {
+        @media (max-width: 910px) {
+            width: 50%;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+    .team-bottom {
+        width: 100%;
+        text-align: center;
+        .team-bottom__btn {
+            width: 130px;
+            height: 45px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: unset;
+            color: #17babe;
+            border: 1px solid #17babe;
+        }
+        &__title{
+            @media (max-width:480px) {
+               font-size: 18px;  
+            }
+        }
+    }
+}

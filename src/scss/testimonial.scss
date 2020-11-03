@@ -1,0 +1,25 @@
+.testimonial{ 
+        background: url(../images/testimonial.png) no-repeat;
+        background-size: cover;
+    &__wrap{display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        color: white;}
+    .testimonial-text{
+        display: flex;
+        width: 100%;
+        .testimonial-text__subtitle{
+            display: flex;
+            align-items: center;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+        }
+      
+    }
+    .testimonial-picture{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}

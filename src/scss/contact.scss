@@ -1,0 +1,88 @@
+.contact {
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        height: 650px;
+        @media (max-width:700px) {
+            height: auto;
+        }
+    }
+    &-forms {
+        width: 50%;
+        @media (max-width:700px) {
+           width: 100%;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+            @media (max-width:700px) {
+                width: 100%;
+             }
+        }
+        &__input {
+            width: 60%;
+            height: 5%;
+            margin-bottom: 10px;
+            @media (max-width:700px) {
+                width: 100%;
+             }
+        }
+        &__textarea {
+            width: 60%;
+            height: 35%;
+            margin-top: 5%;
+            @media (max-width:700px) {
+                width: 100%;
+             }
+        }
+    }
+    &-client {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        @media (max-width:700px) {
+            width: 100%;
+         }
+
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+        &__pictures {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 200px;
+            @media (max-width:700px) {
+                justify-content: center;
+             }
+            .contact-client__logo {
+                text-align: center;
+                width: 45%;
+                height: 75px;
+                @media (max-width:425px) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .contact-bottom{
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        @media (max-width:700px) {
+           justify-content: center;
+         }
+        &__btn{
+         width: 130px;
+        height: 45px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: unset;
+        color: #17babe;
+        border: 1px solid  #17babe;
+        }
+    }
+}

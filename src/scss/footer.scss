@@ -1,0 +1,108 @@
+.footer{
+        background: url(../images/footer.png) no-repeat;
+        background-size: cover;
+    &__wrap{display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+        font-size: 16px;
+        color: white;
+        @media (max-width:750px) {
+            height: auto;
+        }
+    }
+    &-top{
+        display: flex;
+        width: 100%;
+        &__logo{
+            width: 33.3%;
+            padding-top: 3%;
+            padding-left: 5%;
+          
+        }
+        &__text{
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+        }
+        &__title{
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &-center{
+        display: flex;
+        width: 100%;
+        &__sub{
+            width: 33.3%;
+            .footer-center__subtitle{
+                width: 90%;
+                text-align: center;
+                text-indent: 10px;
+            }
+        }
+        &__address{
+            width: 33.3%;
+            .footer-center__phone{
+                margin-top: 7%;
+            }
+        }
+        &__items{
+            width: 33.3%;
+            display: flex;
+            flex-wrap: wrap;
+            @media (max-width:875px) {
+                justify-content: center;
+            }
+            .footer-center__form{
+                width: 200px;
+                height: 35px;
+                margin-top: 3%;
+                background: unset;
+                border: 1px solid darkgrey;
+            }
+            .footer-center__btn{
+                width: 75px;
+                height: 40px;
+                margin-top: 3%;
+                filter: opacity(70%);
+            }
+            .footer-center__social{
+                width: 100%;
+                .footer-center__images{
+                    width: 20px;
+                    height: 20px;
+                    padding: 3%;
+                }
+                .footer-center__images_min{
+                    width: 10px;
+                    height: 20px;
+                    padding: 3%;
+                }
+            }
+        }
+    }
+    &-bottom{
+        display: flex;
+        width: 100%;
+        &__text{
+            width: 50%;
+            display: flex;
+    justify-content: space-around;
+    padding-right: 2%;
+    @media (max-width:750px) {
+        flex-wrap: wrap;
+    }
+    .footer-bottom__help{
+        @media (max-width:750px) {
+        width: 100%;
+        }
+    }
+        }
+        &__copyright{
+            width: 50%;
+            text-align: end;
+            padding-right: 1%;
+        }
+    }
+}

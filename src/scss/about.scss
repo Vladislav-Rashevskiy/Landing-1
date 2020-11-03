@@ -1,0 +1,46 @@
+.about {
+    @media (max-width:950px) {
+        padding-bottom: 20px;
+    }
+    .container {
+        display: flex;
+        box-sizing: border-box;
+        height: 400px;
+        @media (max-width:910px) {
+            height: auto;
+        }
+        @media (max-width:580px) {
+            flex-wrap: wrap;
+         }
+    }
+    .about-logo {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 7%;
+        @media (max-width:580px) {
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+         }
+    }
+    .our-story {
+        width: 50%;
+        padding-top: 5%;
+        @media (max-width:580px) {
+            width: 100%;
+            text-align: center;
+         }
+        .about-btn {
+            width: 130px;
+            height: 45px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: unset;
+            color: #17babe;
+            border: 1px solid #17babe;
+        }
+    }
+}
